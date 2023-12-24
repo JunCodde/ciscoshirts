@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedor Personalizable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="logo-header">
+    <img src="image/camisa.png" alt="Camisa" id="camisa" class="logo-image selected">
+    <img src="image/gorra.png" alt="Gorra" id="gorra" class="logo-image">
+    <!-- Agrega más imágenes de logo según sea necesario -->
+</header>
+<div id="main-container">
+    <div class="card">
+        <div class="image-wrapper">
+            <div id="image-container">
+            </div>
+            <div id="image-container2">
+            </div>
+            <img id="logo" style="position: absolute; display: none;" />
+        </div>
+    </div>
+    <div id="options-container">
+        <div class="upload-container">
+            <div class="file-info">
+                <h3>Sube tu logo</h3>
+                <p>Formatos de archivo recomendados: SVG, PNG, JPG, TIFF, GIF, PDF, EPS</p>
+                <p>Tamaño máximo de subida: 25 MB</p>
+            </div>
+            <form id="file-upload-form" class="file-upload">
+                <label for="file-upload-input" class="file-drag-drop">
+                    Arrastra y suelta el archivo aquí
+                    <br>o<br>
+                    <button type="button" class="select-file-btn">SELECCIONAR ARCHIVO</button>
+                    <input type="file" id="file-upload-input" hidden>
+                </label>
+            </form>
+            <p class="note">Nota: Tu logo subido es seguro, se mantiene privado y sigue siendo de tu propiedad.</p>
+        </div>
+
+        <label for="background-color-picker">Cambia el color de tu artículo</label>
+        <input type="color" id="background-color-picker">
+        <button id="save-design">Guardar Diseño</button>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
